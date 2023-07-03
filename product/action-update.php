@@ -7,5 +7,5 @@
         'id' => $_GET['id']
     ];
     updateProdData($data);
-    header("Location: http://localhost/learn_pdo/index.php");
+    header("Location: http://localhost/HW8_pdo_main/product/index.php");
 ?>

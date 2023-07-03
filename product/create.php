@@ -1,6 +1,7 @@
 <?php
     require_once "pdo.php";
-    $cate = getData();
+    require_once "../category/pdo.php";
+ 
 ?>
 <!DOCTYPE html>
 <html lang="en">
