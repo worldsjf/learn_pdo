@@ -43,8 +43,8 @@ function delete($data) {
 }
 
 function findById($data) {
-    $sql = "SELECT * FROM categories where id=:id";
+    $sql = "SELECT * FROM categories WHERE id=:id";
     $stmt = prepareSQL($sql);
-    $stmt->execute($data);
+    $stmt->execute(['id' => $data]); // Pass the parameter as an array
     return $stmt->fetch();
 }

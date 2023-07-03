@@ -6,8 +6,9 @@ $request = $_POST;
 
 $category = [
     'name' => $request['name'],
+    'price' => $request['price'],
+    'ca_id' => $request['ca_id'],
 ];
 
 create($category);
 redirectHome();
-

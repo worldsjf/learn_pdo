@@ -1,14 +1,15 @@
 <?php
+
 require_once 'pdo.php';
 require_once 'helper.php';
 
 $request = $_POST;
 
-$category = [
-    'name' =>$request['name'],
-    'id'=>$request['id']
-];
+ $name = $request['name'];
+ $id = $request['id'];
+ $price = $request['price'];
+ $ca_id = $request['ca_id'];
 
-update($category);
+update($name, $price, $ca_id, $id);
 redirectHome();
-?>
+

@@ -1,8 +1,7 @@
 <?php
     require_once 'pdo.php';
-
     $category = findById($_GET["id"]);
-    var_dump($category);
+    
 ?>
 
 <!doctype html>
